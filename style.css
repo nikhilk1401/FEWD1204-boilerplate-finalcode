@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Black+Ops+One&family=Chakra+Petch:wght@300;400;500;600;700&family=Courgette&family=Electrolize&family=Hahmlet:wght@100;200;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800&family=Skranji:wght@400;700&display=swap');
+
+/* font-family: 'Poppins',sans-serif*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif; /* Apply same font to all the elements in the page*/
+}
+.common {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    flex-direction: column;
+}
+.container-min {
+    width: 60%;
+    height: auto;
+    box-shadow: 2px 2px 30px 5px rgb(209, 209, 209);
+}
+.one {
+    flex-direction: row;
+}
+.two {
+    width: 40%;
+    padding: 10px;
+    text-align: center; /*Align the text to center*/
+}
+.three {
+    width: 60%;
+}
+h1 {
+    font-weight: 500;
+    font-size: 2.5pc;
+}
+h4 {
+    font-weight: 600;
+    opacity: .6;
+    letter-spacing: .6px; /* Apply a minimum space of 0.6px between the letters*/
+}
+a {
+    position: relative;
+    top: 20px;
+    color: black;
+    transition: .3s;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid gray; /*Apply border*/
+}
+a:hover {
+    background-color: rgb(206, 206, 206);
+}
+.three img {
+    width: 100%;
+    height: auto;
+}
+span {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px 0;/* Apply required padding from top and bottom */
+    letter-spacing: .7px;
+    background: rgb(68, 68, 68);
+}
+.work {
+    flex-direction: column;
+}
+.work img {
+    width: 100%;
+    height: auto;
+}
+.work p {
+    margin-bottom: 20px;
+}
+.footer a {
+    border: 0;
+    top: 0;
+}
+.footer a:hover {
+    background: none;
+}
