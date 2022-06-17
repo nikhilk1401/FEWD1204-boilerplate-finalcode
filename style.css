@@ -5,88 +5,59 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif; /* Apply same font to all the elements in the page*/
-}
-.common {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.container {
-    flex-direction: column;
+    text-align: center; /* Iteration 2: Align text to the center */
+    font-family: 'Poppins',sans-serif; /* Iteration 3: Apply same font to all the elements in the page*/
 }
 .container-min {
-    width: 60%;
+    width: 100%;
     height: auto;
-    box-shadow: 2px 2px 30px 5px rgb(209, 209, 209);
-}
-.one {
-    flex-direction: row;
 }
 .two {
-    width: 40%;
-    padding: 10px;
-    text-align: center; /*Align the text to center*/
-}
-.three {
-    width: 60%;
+    width: 100%;
+    padding: 10px; /* Iteration 4: Apply a padding of '10px' */
 }
 h1 {
     font-weight: 500;
     font-size: 2.5pc;
 }
-h4 {
+/* Iteration 5: Create a selector 'h1' and apply font weight of '600' , opacity of the 
+   text to '0.6' and minimum space of '0.6px' between letters */
+h3 {
     font-weight: 600;
     opacity: .6;
-    letter-spacing: .6px; /* Apply a minimum space of 0.6px between the letters*/
+    letter-spacing: .6px; 
 }
 a {
-    position: relative;
-    top: 20px;
     color: black;
-    transition: .3s;
     padding: 10px 30px;
     border-radius: 20px;
     text-decoration: none;
-    border: 1px solid gray; /*Apply border*/
+    border: 1px solid gray; /* Iteration 6: use shortand property to apply border of '1px' which is solid and 'gray' coloured */
 }
+/* Iteration 7: Create a state for hyperlink where the background color should be changed to 
+   'rgb(206, 206, 206)' when hovered on it */
 a:hover {
     background-color: rgb(206, 206, 206);
 }
-.three img {
-    width: 100%;
+img {
+    width: 80%;
     height: auto;
-}
-span {
-    position: relative;
-    width: 100%;
-    height: auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    padding: 10px 0;/* Apply required padding from top and bottom */
-    letter-spacing: .7px;
-    background: rgb(68, 68, 68);
-}
-.work {
-    flex-direction: column;
-}
-.work img {
-    width: 100%;
-    height: auto;
-}
-.work p {
-    margin-bottom: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
 }
 .footer a {
     border: 0;
-    top: 0;
 }
 .footer a:hover {
     background: none;
+}
+/* Iteration 8: Use appropriate @rule which changes 'h1' font size to '2pc' and images 
+   width to '95%' when the screen size have a maximum width of '700px' */
+@media (max-width:700px) {
+    h1 {
+        font-size: 2pc;
+    }
+    img {
+        width: 95%;
+    }
 }
